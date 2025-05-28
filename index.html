@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="searchForm">
+        <input type="text" placeholder="Search city...">
+        <ul> </ul>
+    </form>
+    <div id="weather" style="display:none">
+        <img src="" alt="" id="icon">
+        <h1 id="degree">20&#8451;</h1>
+        <h2 id="city">Stockholm</h2>
+        <button id="change">Change city</button>
+        <div class="info">
+            <div>
+                <h3>Wind</h3>
+                <div id="windvalue" class="value">2<span>km/h</span></div>
+            </div>
+            <div>
+                <h3>FEELS LIKE</h3>
+                <div id="feelslikevalue" class="value">14<span>&#8451;</span></div>
+            </div>
+            <div>
+                <h3>HUMIDITY</h3>
+                <div id="humidityvalue" class="value">53<span>%</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
